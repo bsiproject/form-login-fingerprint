@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+.login {
+    position: relative;
+    width: 400px;
+    padding: 30px 40px 30px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.979);
+}
+
+.login form {
+    position: relative;
+    width: 100%;
+}
+
+.login form h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+}
+
+.login form h2 span {
+    font-weight: 300;
+    font-size: 0.65em;
+}
+.login h4 {
+    text-align: center;
+}
+.login p {
+    text-align: center;
+}
+
+.login form .inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"] {
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login form .inputBox {
+    position: relative;
+}
+
+.login form .inputBox i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    padding: 0 10px;
+}
+
+.login form .inputBox input[type="text"] {
+    /* kode CSS lainnya */
+    background-image: url('user.png'); /* ganti dengan path ke gambar ikon user */
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+    background-size: 20px;
+}
+
+.login form .inputBox input[type="password"] {
+    /* kode CSS lainnya */
+    background-image: url('lock.png'); /* ganti dengan path ke gambar ikon lock */
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+    background-size: 20px;
+}
+
+
+
+.login form label {
+    display: flex;
+    align-items: center;
+}
+
+.login form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login form .inputBox input[type="submit"] {
+    margin-top: 20px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff;
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login .fingerprint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.login .fingerprint i {
+    font-size: 60px; /* Ubah ukuran ikon fingerprint sesuai kebutuhan Anda */
+}
+
+.login .fingerprint.fingerprintBox {
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff;
+    border: 3px solid #edf1f1;
+    padding: 15px 20px 10px;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #03a9fa, #0082bc);
+}
+
+.login .fingerprint.fingerprintBox img {
+    max-width: 40px;
+    filter: invert(1);
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.login .fingerprint p {
+    font-weight: 500;
+}
